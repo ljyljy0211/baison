@@ -30,7 +30,7 @@ class Api extends AbstractAPI
     public function request(string $serviceType, array $data)
     {
         $http = $this->getHttp();
-        $requestTime = date('Y-m-d H:i:s');
+        $requestTime = date('YmdHis');
         $params = [
             'key' => $this->key,
             'requestTime' => $requestTime,
