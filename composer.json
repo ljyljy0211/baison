@@ -1,0 +1,23 @@
+{
+    "name": "yihaitao/baison",
+    "description": "百胜E3OMS SDK",
+    "license": "MIT",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "yihaitao",
+            "email": "306668387@qq.com"
+        }
+    ],
+    "require": {
+        "php": "^7.0",
+        "hanson/foundation-sdk": "^5.0",
+        "ext-json": "*",
+        "ext-iconv": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "YiHaiTao\\Baison\\": "src"
+        }
+    }
+}
