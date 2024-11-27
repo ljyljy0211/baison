@@ -40,7 +40,7 @@ class Api extends AbstractAPI
         $jsonData = json_encode($data);
         $params['data'] = $jsonData;
         $params['sign'] = $this->signature($requestTime, $serviceType, $jsonData);
-        $response = call_user_func_array([$http, 'POST'], [$this->baseUrl, $params]);
+        $response = call_user_func_array([$http, 'post'], [$this->baseUrl, $params]);
 
         return json_decode($response->getBody(), true);
     }
